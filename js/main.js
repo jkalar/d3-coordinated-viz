@@ -126,8 +126,6 @@ console.log(states_background);
 	return states_background;
 };	
 	
-
-	
 //FUNCTION - NATURAL BREAKS COLOR SCALE
 //Classify the data - Use Natural Breaks color scale
 
@@ -160,9 +158,6 @@ function makeColorScale(data){
     return colorScale;
 };
 	
-	
-	
-	
 // Choropleth function which will test for missing data values
 
 function choropleth(props, colorScale){
@@ -177,9 +172,7 @@ function choropleth(props, colorScale){
         return "#fff";
     };
 };
-	
-	
-	
+		
 //FUNCTION SETENUMERATION UNITS	
 function setEnumerationUnits(states_background, map, path, colorScale){
     
@@ -210,7 +203,6 @@ function setEnumerationUnits(states_background, map, path, colorScale){
 };	
 	
 
-	
 //FUNCTION - CREATE COORDINATED BAR CHART
 function setChart(csvData, colorScale){
     
@@ -303,6 +295,7 @@ function createDropdown(csvData){
         .text(function(d){ return d });
 };	
 	
+    
 //FUNCTION CHANGE ATTRIBUTE IN DROPDOWN BOX
 	
 function changeAttribute(attribute, csvData){
@@ -362,7 +355,7 @@ function changeAttribute(attribute, csvData){
     updateChart(bars, csvData.length, colorScale);
 };
 	
-//function to position, size, and color bars in chart
+//update bars
 function updateChart(bars, n, colorScale){
     //position bars
     bars.attr("x", function(d, i){
@@ -385,7 +378,7 @@ function updateChart(bars, n, colorScale){
         .text("Percent of eligible voters who voted in the selected year.");
 };
 
-//function to highlight enumeration units and bars
+//highlight function
 function highlight(props){
     //change stroke
     var selected = d3.selectAll("." + props.name)
@@ -395,7 +388,7 @@ function highlight(props){
     setLabel(props);
 };
 
-//function to reset the element style on mouseout
+//dehighlight function
 function dehighlight(props){
     var selected = d3.selectAll("." + props.name)
         .style("stroke", function(){
