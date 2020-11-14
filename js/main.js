@@ -372,7 +372,7 @@ function updateChart(bars, n, colorScale){
         .style("fill", function(d){
             return choropleth(d, colorScale);
         });
-
+    
 };
 
 //highlight function
@@ -429,6 +429,7 @@ function setLabel(props){
 };
 
 //function to move info label with mouse
+//Example 2.8 line 1...function to move info label with mouse
 function moveLabel(){
     //get width of label
     var labelWidth = d3.select(".infolabel")
