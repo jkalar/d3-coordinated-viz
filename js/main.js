@@ -372,10 +372,7 @@ function updateChart(bars, n, colorScale){
         .style("fill", function(d){
             return choropleth(d, colorScale);
         });
-    
-    //add text to chart title
-    var chartTitle = d3.select(".chartTitle")
-        .text("Percent of eligible voters who voted in the selected year.");
+
 };
 
 //highlight function
@@ -432,7 +429,6 @@ function setLabel(props){
 };
 
 //function to move info label with mouse
-//Example 2.8 line 1...function to move info label with mouse
 function moveLabel(){
     //get width of label
     var labelWidth = d3.select(".infolabel")
