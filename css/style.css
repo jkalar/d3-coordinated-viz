@@ -83,8 +83,8 @@ option {
 
 .regions {
     fill:#296FB3;
-	stroke: white;
-	stroke-width: 0.5px;
+	stroke: black;
+	stroke-width: 0.8px;
 	stroke-linecap: round;   
 }
 
