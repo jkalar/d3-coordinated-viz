@@ -1,7 +1,7 @@
 /*Stylesheet for Lab 2 Geog 575 by Jeff Kalar, Nov 2020*/
 
 h3 {
-    font-weight: 100; 
+    font-weight: bold; 
 }
 
 body {
@@ -14,7 +14,8 @@ body {
 
 #story{
     text-align: center;
-    /*margin-left: 150px;*/
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .map {
