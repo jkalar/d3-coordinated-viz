@@ -16,8 +16,8 @@ body {
 .chart {
 	float: auto;
 	margin: 0px 0px 50px 100px;
-    outline: solid black 3px;
-    outline-offset: 18px;
+    /*outline: solid black 3px;
+    outline-offset: 18px;*/
 }
 
 .chartTitle {
@@ -66,11 +66,11 @@ option {
 	position: absolute;
 	height: 50px;
 	min-width: 100px;
-	color: red;
+	color: black;
 	background-color: white;
 	border: solid thin #fff;
 	padding: 15px 15px;
-    border-radius: 750px;
+    /*border-radius: 1750px;*/
 	top: -75px;
 }
 
