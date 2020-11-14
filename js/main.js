@@ -390,7 +390,7 @@ function highlight(props){
     //change stroke
     var selected = d3.selectAll("." + props.name)
         .style("stroke", "black")
-        .style("stroke-width", "6");
+        .style("stroke-width", "3.5");
     
     setLabel(props);
 };
