@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: royalblue;
+    background-color: lightgrey;
 }
 
 #story{
@@ -11,7 +11,7 @@ body {
 
 .map {
     margin-left: 25px;
-    background-color: royalblue;
+    background-color: lightgrey;
 }
 .chart {
 	float: auto;
@@ -24,11 +24,11 @@ body {
 	font-family: sans-serif;
 	font-size: 1.05em;
 	font-weight: bold;
-    fill: white;
+    fill: black;
 }
 
 .chartBackground {
-	fill: royalblue;
+	fill: lightgrey;
 }
 
 .chartFrame {
@@ -91,7 +91,7 @@ option {
 .axis path,
 .axis line {
 	fill: none;
-	stroke: white;
+	stroke: black;
 	stroke-width: 1px;
 	shape-rendering: crispEdges;
 }
@@ -99,9 +99,10 @@ option {
 .axis text {
 	font-family: sans-serif;
 	font-size: 1.2em;
-	fill: white;
+	fill: black;
     font-weight: bold;
 }
+
 
 .regions:hover{opacity: 0.75;}
 .bar:hover{opacity: 0.75;}
