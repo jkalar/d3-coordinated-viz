@@ -416,7 +416,7 @@ function dehighlight(props){
 //function to create dynamic label
 function setLabel(props){
     //label content
-    var labelAttribute = "<h1>" + props[expressed] +
+    var labelAttribute = "<h1>" + props[expressed] + "%" +
         "</h1><b>" + expressed + "</b>";
 
     //create info label div
