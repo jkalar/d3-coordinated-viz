@@ -36,7 +36,7 @@ function setMap(){
 		height = 600;
 
 	//create new svg container for the map
-	var map = d3.select("#mapContainer")
+	var map = d3.select("#vizContainer")
 		.append("svg")
 		.attr("class", "map")
 		.attr("width", width)
@@ -212,7 +212,7 @@ function setChart(csvData, colorScale){
     
 
     //create a second svg element to hold the bar chart
-    var chart = d3.select("#mapContainer")
+    var chart = d3.select("#vizContainer")
         .append("svg")
         .attr("width", chartWidth)
         .attr("height", chartHeight)
@@ -277,7 +277,7 @@ function setChart(csvData, colorScale){
 //FUNCTION CREATE DROPDOWN MENU - SELECT BY YEAR	
 function createDropdown(csvData){
     //add select element
-    var dropdown = d3.select("#mapContainer")
+    var dropdown = d3.select("#vizContainer")
         .append("select")
         .attr("class", "dropdown")
         .on("change", function(){
