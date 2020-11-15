@@ -72,8 +72,8 @@ option {
 
 
 .infolabel {
-	position: absolute;
-	height: 50px;
+	position: fixed;
+	height: 110px;
 	min-width: 100px;
 	color: rebeccapurple;
 	background-color: white;
