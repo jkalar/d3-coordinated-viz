@@ -11,7 +11,7 @@ var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
 var chartWidth = window.innerWidth * .40,
-    chartHeight = 700,
+    chartHeight = 400,
     leftPadding = 30,
     rightPadding = 15,
     topBottomPadding = 5,
@@ -43,7 +43,7 @@ function setMap(){
 		.attr("height", height);
     
     var background = d3.select("body").transition()
-        .duration(2500)
+        .duration(1500)
         .style("background-color", "#bcbddc")
 
 	//create AlbersUSA equal area conic to include Alaska and Hawaii
