@@ -13,7 +13,7 @@ var expressed = attrArray[0]; //start
 var chartWidth = window.innerWidth * .33,
     chartHeight = 700,
     leftPadding = 30,
-    rightPadding = 5,
+    rightPadding = 15,
     topBottomPadding = 5,
     chartInnerWidth = chartWidth - leftPadding - rightPadding,
     chartInnerHeight = chartHeight - topBottomPadding * 2,
@@ -48,7 +48,7 @@ function setMap(){
 
 	//create AlbersUSA equal area conic to include Alaska and Hawaii
 	var projection = d3.geoAlbersUsa()
-		.scale(1300)
+		.scale(1200)
 		.translate([width / 2, height / 2]);
 	
 	//create the path generator for the map projection
