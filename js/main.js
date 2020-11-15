@@ -212,7 +212,7 @@ function setChart(csvData, colorScale){
     
 
     //create a second svg element to hold the bar chart
-    var chart = d3.select("#chartContainer")
+    var chart = d3.select("#mapContainer")
         .append("svg")
         .attr("width", chartWidth)
         .attr("height", chartHeight)
