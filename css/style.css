@@ -30,7 +30,7 @@ body {
 }
 .chart {
 	float: auto;
-	margin: 0px 0px 0px 40px;
+	margin: 0px 0px 0px 0px;
     /*outline: solid black 3px;
     outline-offset: 18px;*/
 }
