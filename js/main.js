@@ -32,8 +32,8 @@ window.onload = setMap();
 function setMap(){
 	
 	//dimensions
-	var width = window.innerWidth * 0.44;
-		height = 700;
+	var width = window.innerWidth * 0.54;
+		height = 550;
 
 	//create new svg container for the map
 	var map = d3.select("#mapContainer")
@@ -48,7 +48,7 @@ function setMap(){
 
 	//create AlbersUSA equal area conic to include Alaska and Hawaii
 	var projection = d3.geoAlbersUsa()
-		.scale(900)
+		.scale(1000)
 		.translate([width / 2, height / 2]);
 	
 	//create the path generator for the map projection
@@ -367,7 +367,7 @@ function updateChart(bars, n, colorScale){
         })
         //size/resize bars
         .attr("height", function(d, i){
-            return 692 - yScale(parseFloat(d[expressed]));
+            return 392 - yScale(parseFloat(d[expressed]));
         })
         .attr("y", function(d, i){
             return yScale(parseFloat(d[expressed])) + topBottomPadding;
