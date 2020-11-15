@@ -42,9 +42,9 @@ function setMap(){
 		.attr("width", width)
 		.attr("height", height);
     
-    var poop = d3.select("body").transition()
+    d3.select("body").transition()
         .duration(2500)
-        .style("background-color", "lightgrey")
+        .style("background-color", "#bcbddc")
 
 	//create AlbersUSA equal area conic to include Alaska and Hawaii
 	var projection = d3.geoAlbersUsa()

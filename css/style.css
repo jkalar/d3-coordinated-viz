@@ -24,7 +24,7 @@ body {
 }
 .chart {
 	float: auto;
-	margin: 0px 0px 50px 100px;
+	margin: 0px 0px 0px 100px;
     /*outline: solid black 3px;
     outline-offset: 18px;*/
 }
@@ -92,7 +92,7 @@ option {
 
 .regions {
     fill:#296FB3;
-	stroke: black;
+	stroke: grey;
 	stroke-width: 1px;
 	stroke-linecap: round;   
 }
