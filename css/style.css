@@ -5,7 +5,7 @@ h3 {
 }
 
 body {
-    background-color: lightgrey;
+    background-color: white;
 }
 
 #title {
@@ -20,7 +20,7 @@ body {
 
 .map {
     margin-left: 25px;
-    background-color: lightgrey;
+    background-color: whitesmoke;
 }
 .chart {
 	float: auto;
@@ -37,7 +37,7 @@ body {
 }
 
 .chartBackground {
-	fill: lightgrey;
+	fill: whitesmoke;
 }
 
 .chartFrame {
@@ -75,7 +75,7 @@ option {
 	position: absolute;
 	height: 50px;
 	min-width: 100px;
-	color: black;
+	color: rebeccapurple;
 	background-color: white;
 	border: solid thin #fff;
 	padding: 15px 15px;
@@ -113,7 +113,7 @@ option {
 }
 
 
-.regions:hover{opacity: 0.75;}
+.regions:hover{opacity: 0.35;}
 .bar:hover{opacity: 0.75;}
 	
 	
