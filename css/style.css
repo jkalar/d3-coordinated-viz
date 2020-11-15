@@ -20,7 +20,7 @@ body {
 
 .map {
     margin-left: 25px;
-    background-color: whitesmoke;
+    background-color: grey;
 }
 .chart {
 	float: auto;
@@ -37,7 +37,7 @@ body {
 }
 
 .chartBackground {
-	fill: whitesmoke;
+	fill: grey;
 }
 
 .chartFrame {
