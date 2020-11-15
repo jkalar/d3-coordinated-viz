@@ -32,7 +32,7 @@ window.onload = setMap();
 function setMap(){
 	
 	//dimensions
-	var width = window.innerWidth * 0.54;
+	var width = window.innerWidth * 0.57;
 		height = 550;
 
 	//create new svg container for the map
