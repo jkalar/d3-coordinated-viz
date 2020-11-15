@@ -31,9 +31,10 @@ body {
 
 .chartTitle {
 	font-family: sans-serif;
-	font-size: 1.05em;
+	font-size: 1.0em;
 	font-weight: bold;
     fill: black;
+    text-align: center;
 }
 
 .chartBackground {

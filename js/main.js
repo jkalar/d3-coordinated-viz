@@ -42,7 +42,7 @@ function setMap(){
 		.attr("width", width)
 		.attr("height", height);
     
-    var poop = d3.select("body").transition()
+    var background = d3.select("body").transition()
         .duration(2500)
         .style("background-color", "#bcbddc")
 
@@ -252,7 +252,8 @@ function setChart(csvData, colorScale){
         .attr("x", 125)
         .attr("y", 25)
         .attr("class", "chartTitle")
-        .text("Percent of eligible voters who voted in the selected year.");
+        .style("text-align", "center")
+        .text("Percent of eligible voters who voted in the selected year");
 
     //create vertical axis generator
     var yAxis = d3.axisLeft()
