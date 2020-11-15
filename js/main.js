@@ -36,7 +36,7 @@ function setMap(){
 		height = 600;
 
 	//create new svg container for the map
-	var map = d3.select("body")
+	var map = d3.select("#mapContainer")
 		.append("svg")
 		.attr("class", "map")
 		.attr("width", width)
@@ -251,7 +251,7 @@ function setChart(csvData, colorScale){
 	var chartTitle = chart.append("text")
         .attr("x", 50)
         .attr("y", 25)
-        .attr("class", "chartTitle");
+        .attr("class", "chartTitle")
         /*.text("Percent of eligible voters who voted in the selected year");*/
 
     //create vertical axis generator
