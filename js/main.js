@@ -10,7 +10,7 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .39,
+var chartWidth = window.innerWidth * .38,
     chartHeight = 472,
     leftPadding = 30,
     rightPadding = 5,
@@ -32,7 +32,7 @@ window.onload = setMap();
 function setMap(){
 	
 	//dimensions
-	var width = window.innerWidth * 0.58;
+	var width = window.innerWidth * 0.59;
 		height = 600;
 
 	//create new svg container for the map
@@ -48,7 +48,7 @@ function setMap(){
 
 	//create AlbersUSA equal area conic to include Alaska and Hawaii
 	var projection = d3.geoAlbersUsa()
-		.scale(1050)
+		.scale(1100)
 		.translate([width / 2, height / 2]);
 	
 	//create the path generator for the map projection
