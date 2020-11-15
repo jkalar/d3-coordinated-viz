@@ -4,12 +4,12 @@
 #mapContainer {
     margin-bottom: 10px;
     margin-left: 50px;
-    background-color: white;
+    background-color: #e6e8fa;
 }
 
 #chartContainer {
     margin-top: 150px;
-    background-color: white;
+    background-color: #e6e8fa;
     margin-right: 50px;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .chartBackground {
-	fill: white;
+	fill: #e6e8fa;
 }
 
 .chartFrame {
