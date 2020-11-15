@@ -3,13 +3,13 @@
 
 #mapContainer {
     margin-bottom: 10px;
-    background-color: grey;
+    background-color: #bcbddc;
 }
 
 #chartContainer {
     margin-bottom: 10px;
-    background-color: grey;
-    margin-right: none;
+    background-color: #bcbddc;
+    margin-left: 50px;
 }
 
 h3 {
@@ -45,7 +45,7 @@ body {
 }
 
 .chartBackground {
-	fill: grey;
+	fill: #bcbddc;
 }
 
 .chartFrame {
