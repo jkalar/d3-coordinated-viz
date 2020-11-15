@@ -1,8 +1,11 @@
 /*Stylesheet for Lab 2 Geog 575 by Jeff Kalar, Nov 2020*/
 
 
+#mapContainer {
+    margin-bottom: 10px;
+}
 
-#vizContainer {
+#chartContainer {
     margin-bottom: 10px;
 }
 
