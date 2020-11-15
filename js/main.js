@@ -249,10 +249,9 @@ function setChart(csvData, colorScale){
 	//Code for labeling the bars directly would go here. Label Y axis instead.	
 	
 	var chartTitle = chart.append("text")
-        .attr("x", 125)
+        .attr("x", 50)
         .attr("y", 25)
         .attr("class", "chartTitle")
-        .style("text-align", "center")
         .text("Percent of eligible voters who voted in the selected year");
 
     //create vertical axis generator
