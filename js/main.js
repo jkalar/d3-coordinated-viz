@@ -48,7 +48,7 @@ function setMap(){
 
 	//create AlbersUSA equal area conic to include Alaska and Hawaii
 	var projection = d3.geoAlbersUsa()
-		.scale(1100)
+		.scale(1050)
 		.translate([width / 2, height / 2]);
 	
 	//create the path generator for the map projection
