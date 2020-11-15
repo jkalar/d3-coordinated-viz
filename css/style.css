@@ -3,14 +3,14 @@
 
 #mapContainer {
     margin-bottom: 10px;
-    margin-left: 25px;
+    margin-left: 50px;
     background-color: white;
 }
 
 #chartContainer {
     margin-top: 150px;
     background-color: white;
-    margin-left: 0px;
+    margin-right: 50px;
 }
 
 h3 {
