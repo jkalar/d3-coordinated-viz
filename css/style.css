@@ -2,7 +2,8 @@
 
 
 .dropdown-menu {
-    white-space: nowrap;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .dropdown-item {
