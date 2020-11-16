@@ -57,12 +57,6 @@ body {
 	shape-rendering: crispEdges;
 }
 
-.numbers {
-	fill: black;
-	font-family: sans-serif;
-    font-size: 2px;
-}
-
 .dropdown {
     position: absolute;
     top: auto;
