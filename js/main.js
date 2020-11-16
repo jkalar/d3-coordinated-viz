@@ -3,6 +3,8 @@
 //Anonymous function - local scope
 (function(){
 
+
+    
 //attributes from csv - pseudo-global variables
 var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004", "2002", "2000"]; 
 
@@ -54,7 +56,8 @@ function setMap(){
 	//create the path generator for the map projection
 	var path = d3.geoPath()
 		.projection(projection);
-
+    
+    
 	//use Promise.all to parallelize asynchronous data loading
 	var promises = [];
 	//load attributes from csv
@@ -498,7 +501,26 @@ function moveLabel(){
             .duration(zoomSettings.duration)
             .ease(zoomSettings.ease)
     }*/
-
+    
+    
+  /*  const zoom = d3.zoom().scaleExtent(0, 1000).on("zoom", zoomHandler);
+    
+    function zoomHandler() {
+        g.attr("tranform", d3.event.transform);
+    }
+    
+    d3.select("#btn-zoom--in").on("click", () => 
+                                 clickToZoom(ZOOM_IN_STEP));
+    
+    d3.select("#btn-zoom--out").on("click", () => 
+                                 clickToZoom(ZOOM_OUT_STEP));
+    
+    function clickToZoom(zoomStep) {
+        svg
+        .transition()
+        .duration(ZOOM_DURATION)
+        .call(zoom.scaleBy, zoomStep);
+    } */
     
     
 })(); //last line of main.js
