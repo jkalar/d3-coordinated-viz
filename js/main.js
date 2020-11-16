@@ -10,8 +10,8 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .30,
-    chartHeight = 200,
+var chartWidth = window.innerWidth * .32,
+    chartHeight = 250,
     leftPadding = 30,
     rightPadding = 15,
     topBottomPadding = 5,
@@ -367,7 +367,7 @@ function updateChart(bars, n, colorScale){
         })
         //size/resize bars
         .attr("height", function(d, i){
-            return 192 - yScale(parseFloat(d[expressed]));
+            return 242 - yScale(parseFloat(d[expressed]));
         })
         .attr("y", function(d, i){
             return yScale(parseFloat(d[expressed])) + topBottomPadding;
