@@ -58,6 +58,8 @@ function setMap(){
 		.projection(projection);
     
     
+    
+    
 	//use Promise.all to parallelize asynchronous data loading
 	var promises = [];
 	//load attributes from csv
@@ -66,8 +68,6 @@ function setMap(){
 	//load choropleth spatial data
 	promises.push(d3.json("data/us-states_topo.topojson")); 
 	Promise.all(promises).then(callback);
-	
-	
 	
 	//FUNCTION CALLBACK
 	function callback(data){ 
