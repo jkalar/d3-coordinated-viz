@@ -4,12 +4,13 @@
 #mapContainer {
     margin-bottom: 10px;
     margin-left: 20px;
-    background-color: #e6e8fa;
+   /* background-color: #e6e8fa;*/
+    background-color: #f3f3f3;
 }
 
 #chartContainer {
     margin-top: 150px;
-    background-color: #e6e8fa;
+    background-color: #f3f3f3;
     margin-right: 0px;
     margin-left: 20px;
     margin-top: 270px;
@@ -25,7 +26,7 @@ h3 {
 }
 
 body {
-    background-color: #e6e8fa;
+    background-color: #f3f3f3;
 }
 
 #title {
@@ -53,7 +54,7 @@ body {
 }
 
 .chartBackground {
-	fill: #e6e8fa;
+	fill: #f3f3f3;
 }
 
 .chartFrame {
