@@ -5,12 +5,12 @@
     margin-bottom: 10px;
     margin-left: 20px;
    /* background-color: #e6e8fa;*/
-    background-color: #f3f3f3;
+    background-color: #adad88;
 }
 
 #chartContainer {
     margin-top: 150px;
-    background-color: #f3f3f3;
+    background-color: #adad88;
     margin-right: 0px;
     margin-left: 20px;
     margin-top: 270px;
@@ -26,7 +26,7 @@ h3 {
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: #adad88;
 }
 
 #title {
@@ -54,7 +54,7 @@ body {
 }
 
 .chartBackground {
-	fill: #f3f3f3;
+	fill: #adad88;
 }
 
 .chartFrame {
@@ -104,7 +104,7 @@ option {
 .regions {
     fill:#296FB3;
 	stroke: grey;
-	stroke-width: 1px;
+	stroke-width: 2px;
 	stroke-linecap: round;   
 }
 

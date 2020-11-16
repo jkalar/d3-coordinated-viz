@@ -249,10 +249,10 @@ function setChart(csvData, colorScale){
             return b[expressed]-a[expressed]
         })
         .attr("class", function(d){
-            return "bar " + d.props;
+            return "bar " + d.name;
         })
         .attr("width", chartInnerWidth / csvData.length - 1)
-        .attr("cursor", "pointer")
+        
         .on("mouseover", highlight)
         .on("mouseout", dehighlight)
         .on("mousemove", moveLabel);
@@ -397,8 +397,8 @@ function updateChart(bars, n, colorScale){
 function highlight(props){
     //change stroke
     var selected = d3.selectAll("." + props.name)
-        .style("stroke", "black")
-        .style("stroke-width", "3.5");
+        .style("stroke", "white")
+        .style("stroke-width", "2");
     
     setLabel(props);
 };
