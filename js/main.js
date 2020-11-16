@@ -252,7 +252,7 @@ function setChart(csvData, colorScale){
         .attr("x", 50)
         .attr("y", 25)
         .attr("class", "chartTitle")
-        /*.text("Percent of eligible voters who voted in the selected year");*/
+        .text("Percent of eligible voters who voted in the selected year");
 
     //create vertical axis generator
     var yAxis = d3.axisLeft()
