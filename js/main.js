@@ -135,12 +135,26 @@ console.log(states_background);
 
 function makeColorScale(data){
 	var colorClasses = [
-		"#ffffff",
+		/*"#ffffff",
         "#dadaeb",
         "#bcbddc",
         "#9e9ac8",
         "#756bb1",
-		"#54278f"				
+		"#54278f"*/
+        
+        /*"#d7def4",
+        "#b7c2e5",
+        "#8898ce",
+        "#5a6fb5",
+        "#394e93",
+		"#13245b"*/
+        
+        "#ded59f",
+        "#cabc6c",
+        "#b1a247",
+        "#887a28",
+        "#615512",
+		"#383107"
     ];
 	
 	//create the generator
