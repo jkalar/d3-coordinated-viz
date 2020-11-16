@@ -522,9 +522,6 @@ function moveLabel(){
         .call(zoom.scaleBy, zoomStep);
     } */
     
-   
-    
-        
     
 })(); //last line of main.js
 	

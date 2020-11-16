@@ -2,7 +2,7 @@
 
 
 .jumbotron-fluid {
-    border: solid 10px;
+    border: solid 8px;
     border-color: #887a28;
 }
 
@@ -75,6 +75,7 @@ body {
 	font-size: 0.9em;
 	font-weight: bold;
     fill: black;
+    margin-left: 0px;
 }
 
 .chartBackground {
@@ -98,7 +99,7 @@ body {
     font-weight: bold;
     color: #383107;
     padding: 6px;
-    border: 2px solid #887a28;
+    border: 1px solid #887a28;
     box-shadow: 1px 1px 2px #000;
 }
 
