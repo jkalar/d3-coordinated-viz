@@ -10,8 +10,8 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .34,
-    chartHeight = 400,
+var chartWidth = window.innerWidth * .30,
+    chartHeight = 200,
     leftPadding = 30,
     rightPadding = 15,
     topBottomPadding = 5,
@@ -32,7 +32,7 @@ window.onload = setMap();
 function setMap(){
 	
 	//dimensions
-	var width = window.innerWidth * 0.55;
+	var width = window.innerWidth * 0.50;
 		height = 550;
 
 	//create new svg container for the map
@@ -367,7 +367,7 @@ function updateChart(bars, n, colorScale){
         })
         //size/resize bars
         .attr("height", function(d, i){
-            return 392 - yScale(parseFloat(d[expressed]));
+            return 192 - yScale(parseFloat(d[expressed]));
         })
         .attr("y", function(d, i){
             return yScale(parseFloat(d[expressed])) + topBottomPadding;
