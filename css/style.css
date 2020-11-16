@@ -3,7 +3,7 @@
 
 #mapContainer {
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
    /* background-color: #e6e8fa;*/
     background-color: #adad88;
 }
@@ -27,6 +27,8 @@ h3 {
 
 body {
     background-color: #adad88;
+    /*background-image: url("/img/usa.jpg");
+    background-size: cover;*/
 }
 
 #title {
