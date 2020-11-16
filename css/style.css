@@ -15,6 +15,11 @@
     margin-top: 270px;
 }
 
+h1 {
+    font-family: garamond;
+    font-weight: bold;
+}
+
 h3 {
     font-weight: bolder;
 }
