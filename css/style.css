@@ -1,6 +1,11 @@
 /*Stylesheet for Lab 2 Geog 575 by Jeff Kalar, Nov 2020*/
 
 
+.jumbotron-fluid {
+    border: solid 10px;
+    border-color: #887a28;
+}
+
 .dropdown-menu {
     height: 180px;
     overflow-y: auto;
