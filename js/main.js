@@ -13,7 +13,7 @@ var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
 var chartWidth = window.innerWidth * .30,
-    chartHeight = 250,
+    chartHeight = 200,
     leftPadding = 30,
     rightPadding = 15,
     topBottomPadding = 5,
@@ -35,7 +35,7 @@ function setMap(){
 	
 	//dimensions
 	var width = window.innerWidth * 0.60;
-		height = 600;
+		height = 500;
 
 	//create new svg container for the map
 	var map = d3.select("#mapContainer")
