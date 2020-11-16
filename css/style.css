@@ -102,10 +102,10 @@ option {
 
 .infolabel {
 	position: fixed;
-	height: 110px;
+	height: 100px;
 	min-width: 100px;
-	color: rebeccapurple;
-	background-color: white;
+	color: #383107;
+	background-color: #ded59f;
 	border: solid thin #fff;
 	padding: 15px 15px;
     /*border-radius: 1750px;*/

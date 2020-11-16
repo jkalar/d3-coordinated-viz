@@ -266,8 +266,8 @@ function setChart(csvData, colorScale){
 	//Code for labeling the bars directly would go here. Label Y axis instead.	
 	
 	var chartTitle = chart.append("text")
-        .attr("x", 100)
-        .attr("y", 25)
+        .attr("x", 120)
+        .attr("y", 10)
         .attr("class", "chartTitle")
         .text("% Turnout by State");
 
@@ -416,7 +416,7 @@ function dehighlight(props){
             return getStyle(this, "stroke-width")
         });
     
-    //below Example 2.4 line 21...remove info label
+    //remove info label
     d3.select(".infolabel")
         .remove();
 
