@@ -10,7 +10,7 @@ var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004",
 var expressed = attrArray[0]; //start
 	
 //chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
-var chartWidth = window.innerWidth * .32,
+var chartWidth = window.innerWidth * .30,
     chartHeight = 250,
     leftPadding = 30,
     rightPadding = 15,
@@ -249,8 +249,8 @@ function setChart(csvData, colorScale){
 	//Code for labeling the bars directly would go here. Label Y axis instead.	
 	
 	var chartTitle = chart.append("text")
-        .attr("x", 70)
-        .attr("y", 25)
+        .attr("x", 40)
+        .attr("y", 35)
         .attr("class", "chartTitle")
         .text("Percent of eligible voters who voted in the selected year");
 
