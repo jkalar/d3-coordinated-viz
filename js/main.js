@@ -305,7 +305,7 @@ function createDropdown(csvData){
     var titleOption = dropdown.append("option")
         .attr("class", "titleOption")
         .attr("disabled", "true")
-        .text("Select Year");
+        .text("Select Election Year");
 
     //add attribute name options
     var attrOptions = dropdown.selectAll("attrOptions")
