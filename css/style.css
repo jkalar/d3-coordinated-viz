@@ -6,8 +6,8 @@ p {
 }
 
 .jumbotron-fluid {
-    border: solid 4px;
-    border-color: #887a28;
+   /* border: solid 4px;
+    border-color: #887a28;*/
 }
 
 .dropdown-menu {
@@ -58,6 +58,8 @@ body {
     background-color: #adad88;
     /*background-image: url("/img/usa.jpg");
     background-size: cover;*/
+    border: solid 15px;
+    border-color: #887a28;
 }
 
 #title {
