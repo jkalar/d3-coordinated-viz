@@ -207,6 +207,8 @@ function setEnumerationUnits(states_background, map, path, colorScale){
 		})
 		.attr("d", path)
         .attr("cursor", "pointer")
+        .style("overflow-x", "scroll")
+        .style("=webkit-overflow-scrolling", "touch")
 		.style("fill", function(d){
             return choropleth(d.properties, colorScale);
         })
@@ -223,38 +225,7 @@ function setEnumerationUnits(states_background, map, path, colorScale){
     .text('{"stroke": "#000", "stroke-width": "0.5px"}');
 };	
 
-    
- var g = svg.append("g");
-    
- var zoomSettings = {
-        duration: 1000,
-        ease: d3.easeCubicOut,
-        zoomLevel: 6
-    };
-    
-    function clicked(d) {
-        var x;
-        var y;
-        var zoomLevel;
-        
-        if (d && centered !== d) {
-            var centroid = path.centroid(d);
-            x = centroid[0];
-            y = centroid[1];
-            zoomlevel = zoomSettings.zoomLevel;
-            centered = d;
-        } else {
-            x = width / 2;
-            y =  height / 2;
-            zoomLevel = 1;
-            centered = null;
-        }
-    
-        g.transition()
-            .duration(zoomSettings.duration)
-            .ease(zoomSettings.ease)
-            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + zoomLevel + ")translate(" + -x +"," + -y + ")");
-    }   
+  
 
 //FUNCTION - CREATE COORDINATED BAR CHART
 function setChart(csvData, colorScale){
@@ -294,8 +265,7 @@ function setChart(csvData, colorScale){
 
 	var desc = bars.append("desc")
         .text('{"stroke": "none", "stroke-width": "0px"}');
-	
-	//Code for labeling the bars directly would go here. Label Y axis instead.	
+		
 	
 	var chartTitle = chart.append("text")
         .attr("x", 120)
@@ -416,7 +386,7 @@ function updateChart(bars, n, colorScale){
         })
         //size/resize bars
         .attr("height", function(d, i){
-            return 242 - yScale(parseFloat(d[expressed]));
+            return 192 - yScale(parseFloat(d[expressed]));
         })
         .attr("y", function(d, i){
             return yScale(parseFloat(d[expressed])) + topBottomPadding;
@@ -525,6 +495,38 @@ function moveLabel(){
         .transition()
         .duration(ZOOM_DURATION)
         .call(zoom.scaleBy, zoomStep);
+    } */
+    
+ /*    var g = svg.append("g");
+    
+ var zoomSettings = {
+        duration: 1000,
+        ease: d3.easeCubicOut,
+        zoomLevel: 6
+    };
+    
+    function clicked(d) {
+        var x;
+        var y;
+        var zoomLevel;
+        
+        if (d && centered !== d) {
+            var centroid = path.centroid(d);
+            x = centroid[0];
+            y = centroid[1];
+            zoomlevel = zoomSettings.zoomLevel;
+            centered = d;
+        } else {
+            x = width / 2;
+            y =  height / 2;
+            zoomLevel = 1;
+            centered = null;
+        }
+    
+        g.transition()
+            .duration(zoomSettings.duration)
+            .ease(zoomSettings.ease)
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + zoomLevel + ")translate(" + -x +"," + -y + ")");
     } */
     
     
