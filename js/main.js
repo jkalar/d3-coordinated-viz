@@ -3,15 +3,13 @@
 //Anonymous function - local scope
 (function(){
 
-
-    
-//attributes from csv - pseudo-global variables
+//Attributes - CSV
 var attrArray = ["2018", "2016", "2014", "2012", "2010", "2008", "2006", "2004", "2002", "2000"]; 
 
-//list of attributes
+//Attribute List
 var expressed = attrArray[0]; //start
 	
-//chart frame dimensions  - Formerly under: FUNCTION - CREATE COORDINATED BAR CHART
+//Chart Frame dimensions  
 var chartWidth = window.innerWidth * .30,
     chartHeight = 200,
     leftPadding = 30,
