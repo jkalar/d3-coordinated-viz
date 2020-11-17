@@ -9,6 +9,7 @@ p {
 .jumbotron-fluid {
    /* border: solid 4px;
     border-color: #887a28;*/
+    font-weight: bold;
 }
 
 .dropdown-menu {
