@@ -222,7 +222,39 @@ function setEnumerationUnits(states_background, map, path, colorScale){
     var desc = regions.append("desc")
     .text('{"stroke": "#000", "stroke-width": "0.5px"}');
 };	
-	
+
+    
+ var g = svg.append("g");
+    
+ var zoomSettings = {
+        duration: 1000,
+        ease: d3.easeCubicOut,
+        zoomLevel: 6
+    };
+    
+    function clicked(d) {
+        var x;
+        var y;
+        var zoomLevel;
+        
+        if (d && centered !== d) {
+            var centroid = path.centroid(d);
+            x = centroid[0];
+            y = centroid[1];
+            zoomlevel = zoomSettings.zoomLevel;
+            centered = d;
+        } else {
+            x = width / 2;
+            y =  height / 2;
+            zoomLevel = 1;
+            centered = null;
+        }
+    
+        g.transition()
+            .duration(zoomSettings.duration)
+            .ease(zoomSettings.ease)
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + zoomLevel + ")translate(" + -x +"," + -y + ")");
+    }   
 
 //FUNCTION - CREATE COORDINATED BAR CHART
 function setChart(csvData, colorScale){
@@ -473,34 +505,7 @@ function moveLabel(){
         .style("top", y + "px");
 };
     
-  /*  var zoomSettings = {
-        duration: 1000,
-        ease: d3.easeCubicOut,
-        zoomLevel: 5
-    };
-    
-    function clicked(d) {
-        var x;
-        var y;
-        var zoomLevel;
-        
-        if (d && centered !== d) {
-            var centroid = path.centroid(d);
-            x = centroid[0];
-            y = centroid[1];
-            zoomlevel = zoomSettings.zoomLevel;
-            centered = d;
-        } else {
-            x = width / 2;
-            y =  height / 2;
-            zoomLevel = 1;
-            centered = null;
-        }
-    
-        g.transition()
-            .duration(zoomSettings.duration)
-            .ease(zoomSettings.ease)
-    }*/
+ 
     
     
   /*  const zoom = d3.zoom().scaleExtent(0, 1000).on("zoom", zoomHandler);
