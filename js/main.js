@@ -207,8 +207,6 @@ function setEnumerationUnits(states_background, map, path, colorScale){
 		})
 		.attr("d", path)
         .attr("cursor", "pointer")
-        .style("overflow-x", "scroll")
-        .style("=webkit-overflow-scrolling", "touch")
 		.style("fill", function(d){
             return choropleth(d.properties, colorScale);
         })
