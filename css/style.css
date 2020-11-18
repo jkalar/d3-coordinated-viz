@@ -6,6 +6,7 @@
 p {
     color: #383107;
     font-weight: bold;
+    font-family: garamond;
 }
 
 .col-sm-4 {
@@ -62,6 +63,7 @@ h5 {
     color: #383107;
     font-weight: bold;
     margin-top: 20px;
+    font-family: garamond;
 }
 
 body {
