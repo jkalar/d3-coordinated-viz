@@ -1,4 +1,6 @@
-/*Stylesheet for Lab 2 Geog 575 by Jeff Kalar, Nov 2020*/
+/* Stylesheet for Lab 2 Geog 575 by Jeff Kalar, Nov 2020 */
+/* D3 Coordinated Visual */
+/* Voter Turnout in United States Elections */
 
 
 p {
@@ -127,14 +129,13 @@ option {
 
 .infolabel {
 	position: fixed;
-	height: 100px;
+	height: 85px;
 	min-width: 100px;
 	color: #383107;
 	background-color: #ded59f;
 	border: solid thin #fff;
 	padding: 15px 15px;
     /*border-radius: 1750px;*/
-	top: -75px;
 }
 
 .infolabel h1 {
