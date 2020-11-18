@@ -28,7 +28,6 @@ window.onload = setMap();
 	
 	
 //FUNCTION SETMAP
-//set up choropleth: FUNCTION SETMAP
 function setMap(){
 	
 	//dimensions
@@ -46,28 +45,25 @@ function setMap(){
         .duration(1500)
         .style("background-color", "#e6e8fa")*/
 
-	//create AlbersUSA equal area conic to include Alaska and Hawaii
+	// AlbersUSA equal area conic projection - includes Alaska and Hawaii
 	var projection = d3.geoAlbersUsa()
 		.scale(1000)
 		.translate([width / 2, height / 2]);
 	
 	//create the path generator for the map projection
 	var path = d3.geoPath()
-		.projection(projection);
+		.projection(projection); 
     
-    
-    
-    
-	//use Promise.all to parallelize asynchronous data loading
+	// use promise to parallelize asynchronous data loading
 	var promises = [];
-	//load attributes from csv
+	// load attributes from csv
 	promises.push(d3.csv("data/voterTurnout.csv"));
 	
-	//load choropleth spatial data
+	// load spatial data for choropleth
 	promises.push(d3.json("data/us-states_topo.topojson")); 
 	Promise.all(promises).then(callback);
 	
-	//FUNCTION CALLBACK
+	// Callback Function
 	function callback(data){ 
 
 		csvData = data[0];		
@@ -91,13 +87,10 @@ function setMap(){
 		//dropdown menu
 		createDropdown(csvData);
 		
-	
 	};
 };   //end setMap()
 	
-	
-
-//FUNCTION JOIN DATA
+//Function Join Data
 //loop through the csv to and join
 function joinData(states_background, csvData){
 	
@@ -131,8 +124,7 @@ console.log(states_background);
 	return states_background;
 };	
 	
-//FUNCTION - NATURAL BREAKS COLOR SCALE
-//Classify the data - Use Natural Breaks color scale
+//Classify the data 
 
 function makeColorScale(data){
 	var colorClasses = [
@@ -169,7 +161,6 @@ function makeColorScale(data){
         domainArray.push(val);
     };    
 
-	//domainArray.shift();
     //assign array of last 4 cluster minimums as domain
     colorScale.domain(domainArray);
 	console.log(domainArray);
@@ -184,7 +175,7 @@ function choropleth(props, colorScale){
     //make sure attribute value is a number
     var val = parseFloat(props[expressed]);
     
-	//if attribute value exists, assign a color; otherwise assign gray
+	//if attribute value exists, assign a color - otherwise assign gray
     if (typeof val == 'number' && !isNaN(val)){
         return colorScale(val);
     } else {
@@ -216,18 +207,16 @@ function setEnumerationUnits(states_background, map, path, colorScale){
         })
         .on("mousemove", moveLabel);
     
-    //below Example 2.2 line 16...add style descriptor to each path
+    //add style descriptor to each path
     var desc = regions.append("desc")
     .text('{"stroke": "#000", "stroke-width": "0.5px"}');
 };	
 
-  
-
-//FUNCTION - CREATE COORDINATED BAR CHART
+//FUNCTION - Create Bar Chart
 function setChart(csvData, colorScale){
     
 
-    //create a second svg element to hold the bar chart
+    //create a svg element to hold the bar chart
     var chart = d3.select("#chartContainer")
         .append("svg")
         .attr("width", chartWidth)
@@ -242,7 +231,7 @@ function setChart(csvData, colorScale){
         .attr("transform", translate);
      
 
-    //set bars for each province
+    //set bars for each state
     var bars = chart.selectAll(".bar")
         .data(csvData)
         .enter()
